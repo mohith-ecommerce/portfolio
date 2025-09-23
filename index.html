@@ -1,178 +1,332 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Wireframe — Mohith N</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
-  <script type="application/ld+json" id="jsonld-person">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark light" />
+  <title>Mohith N — Adobe Commerce (Magento) Lead | E‑commerce Architect & Consultant</title>
+  <meta name="description" content="Adobe Commerce (Magento) Lead Consultant helping brands in the USA, Europe, UAE, Middle East & APAC launch, scale and optimize e‑commerce. Headless builds, custom modules, Core Web Vitals, SEO. Book a 30‑min consult." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://mohith-ecommerce.github.io/" />
+  <meta property="og:title" content="Mohith N — Adobe Commerce (Magento) Lead" />
+  <meta property="og:description" content="Launch, scale, and optimize Adobe Commerce & Magento storefronts. Headless builds, custom modules, and performance wins across US, EU, UAE & APAC." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/og-banner.webp" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="en_GB" />
+  <meta property="og:locale:alternate" content="ar_AE" />
+  <!-- Favicon & PWA -->
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="assets/site.webmanifest">
+  <meta name="theme-color" content="#0b0b0b" />
+
+  <!-- Performance: prioritize LCP image -->
+  <link rel="preload" as="image" href="assets/img/cover.webp" fetchpriority="high" />
+  <link rel="preload" as="image" href="assets/img/avatar.webp" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+<header>
+  <div class="wrap nav" role="navigation" aria-label="primary">
+    <div class="brand">
+      <a class="logo" href="#home" aria-label="Go to top"><span class="logo-dot"></span><span>Mohith N</span></a>
+    </div>
+    <button class="hamburger" id="menuToggle" aria-haspopup="true" aria-expanded="false" aria-controls="primary-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="primary-nav" aria-label="sections">
+      <ul class="links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="iconbar">
+      <a class="iconbtn" href="mailto:mohithnanjundamurthy05@gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5L4 8V6l8 5 8-5v2Z"/></svg>
+      </a>
+      <a class="iconbtn" href="https://www.linkedin.com/in/mohith-ecommerce/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14ZM8.34 18.34V9.67H6v8.67h2.34ZM7.17 8.5a1.34 1.34 0 1 0 0-2.68 1.34 1.34 0 0 0 0 2.68ZM18.34 18.34v-4.67c0-2.49-1.33-3.65-3.11-3.65-1.43 0-2.07.79-2.43 1.36v-1.17h-2.4c.03.77 0 8.67 0 8.67h2.3V14c0-.26.02-.52.1-.71.22-.52.74-1.06 1.6-1.06 1.13 0 1.58.8 1.58 1.98v4.63h2.26Z"/></svg>
+      </a>
+      <a class="iconbtn" href="https://github.com/mohith-ecommerce" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.71.5.1.68-.22.68-.49 0-.24-.01-1.01-.01-1.84-2.78.61-3.37-1.22-3.37-1.22-.46-1.2-1.13-1.52-1.13-1.52-.93-.65.07-.64.07-.64 1.03.07 1.57 1.08 1.57 1.08.92 1.61 2.4 1.14 2.99.87.09-.68.36-1.14.65-1.4-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.3.1-2.7 0 0 .84-.27 2.75 1.05a9.2 9.2 0 0 1 5 0c1.9-1.32 2.74-1.05 2.74-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.64 1.03 2.76 0 3.94-2.34 4.8-4.57 5.06.37.33.7.97.7 1.96 0 1.41-.01 2.55-.01 2.9 0 .27.18.6.69.49A10.04 10.04 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"/></svg>
+      </a>
+      <button class="btn" id="btn-book" aria-haspopup="dialog" aria-controls="modal-cal">Book</button>
+    </div>
+  </div>
+</header>
+
+<main id="home" class="wrap">
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="cover" aria-label="Cover image (replace assets/img/cover.webp)"></div>
+    <div class="profile">
+      <div class="avatar" aria-label="Profile image">
+        <img src="assets/img/avatar.webp" alt="Portrait of Mohith N" width="280" height="280" loading="lazy"/>
+      </div>
+      <div class="profile-info">
+        <span class="kicker"><span class="dot" aria-hidden="true"></span> Adobe Commerce • Magento • Headless</span>
+        <h1 id="hero-title">I architect, build, and scale high‑performing e‑commerce stores</h1>
+        <p class="sub">Lead Consultant (7+ yrs). Magento 2 & Adobe Commerce, headless (Next.js), BigCommerce & WooCommerce. USA, Europe, UAE, Middle East, SE Asia, India, ANZ. I turn complex requirements into fast, secure, conversion‑ready sites.</p>
+        <div class="hero-ctas">
+          <button class="btn" id="btn-brief" aria-haspopup="dialog" aria-controls="modal-form">Share your brief</button>
+          <a class="btn ghost" href="#projects">See selected work</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" aria-labelledby="about-title">
+    <h2 id="about-title" class="reveal">About Me</h2>
+    <p class="reveal">I’m Mohith N, an Adobe Commerce (Magento) Lead Consultant and e‑commerce architect. I build from scratch, migrate platforms, and enhance existing storefronts. My approach blends <strong>clean architecture</strong>, <strong>performance engineering</strong>, and <strong>technical SEO</strong> to ship storefronts that rank, scale, and sell. I partner with founders and teams to define KPIs, roadmaps, and integrations across OMS/ERP/CRM, payments, search, caching, and analytics.</p>
+    <p class="reveal">Highlights include multi‑store Middle East builds (OTP, Tabby/Tamara, Fastly, SWAN), headless WordPress+Next.js in the US (Olo, Yext, GA4), and B2B/B2C features like subscriptions, brand portals, and custom checkout. Certifications: Adobe Commerce Developer Professional.</p>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" aria-labelledby="svc-title">
+    <h2 id="svc-title" class="reveal">Engagements & Services</h2>
+    <div class="grid services">
+      <article class="card reveal" aria-label="Adobe Commerce builds">
+        <h3>Adobe Commerce / Magento Builds</h3>
+        <p>Discovery → launch: custom themes, extensions, multi‑store, B2B, subscriptions, OMS/ERP/CRM, payments, tax, and performance hardening.</p>
+        <ul>
+          <li>Custom modules (Buy Now, Brand Portal, Athlete, Clean Crons)</li>
+          <li>Headless: WordPress + Next.js, Olo, Yext</li>
+          <li>Search: Algolia / Live Search / Elasticsearch</li>
+        </ul>
+      </article>
+      <article class="card reveal" aria-label="Migrations">
+        <h3>Migrations & Re‑platforming</h3>
+        <p>Magento 1 → 2, Commerce Cloud → WooCommerce/BigCommerce, URL strategy, redirects, SEO risk mitigation.</p>
+      </article>
+      <article class="card reveal" aria-label="Growth & SEO">
+        <h3>Growth, SEO & Core Web Vitals</h3>
+        <p>Technical SEO, schema, CWV fixes, caching (Fastly), image/WebP/CDN, discovery optimization to lift traffic and orders.</p>
+      </article>
+      <article class="card reveal" aria-label="Consulting">
+        <h3>Consulting & Retainers</h3>
+        <p>Architecture reviews, audits, roadmaps, incident response, and monthly iteration cycles for measurable outcomes.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- PROJECTS (vanilla carousel; dark-theme sticker cards with descriptions) -->
+  <section id="projects" class="projects" aria-labelledby="proj-title">
+    <h2 id="proj-title" class="reveal">Selected Projects</h2>
+    <div class="carousel" id="brandsCarousel" aria-label="Client logos and regions">
+      <div class="nav-arrows"><button class="prev" aria-label="Previous"></button><button class="next" aria-label="Next"></button></div>
+      <div class="viewport"><div class="track">
+
+        <a class="brand-card" href="https://www.binsina.ae/en/" target="_blank" rel="noopener" aria-label="BinSina UAE">
+          <div class="sticker"><img class="logo" src="assets/img/binsina-logo.webp" alt="BinSina logo" loading="lazy"></div>
+          <div class="brand-name">BinSina</div>
+          <div class="brand-region">UAE</div>
+          <p class="brand-desc">Adobe Commerce Cloud multi‑store with SWAN CRM, Algolia search, Fastly CDN, GA/GTM/GSC, and mobile apps integration (Kotlin & Swift). OTP + Tabby/Tamara. Result: ~80% traffic growth and ~2× sales after performance & feature improvements.</p>
+        </a>
+
+        <a class="brand-card" href="https://www.petit-bateau.ae/en/" target="_blank" rel="noopener" aria-label="Petit‑Bateau ME">
+          <div class="sticker"><img class="logo" src="assets/img/petit-logo.webp" alt="Petit‑Bateau logo" loading="lazy"></div>
+          <div class="brand-name">Petit‑Bateau</div>
+          <div class="brand-region">Middle East</div>
+          <p class="brand-desc">Adobe Commerce Cloud 2.4.6 multi‑store; Live Search, Fastly CDN, SWAN, social login/OTP, Tabby/Tamara; GA, GTM, GSC, New Relic. Achieved ~60% traffic increase and ~80% sales lift.</p>
+        </a>
+
+        <a class="brand-card" href="https://us.quickheal.com/" target="_blank" rel="noopener" aria-label="Quick Heal US">
+          <div class="sticker"><img class="logo" src="assets/img/quickheal-logo.webp" alt="Quick Heal logo" loading="lazy"></div>
+          <div class="brand-name">Quick Heal</div>
+          <div class="brand-region">USA</div>
+          <p class="brand-desc">Migration from Magento 2.3.4 → 2.3.6 with virtual/downloadable products; SAP for invoicing, Zoho for order management, Stripe payments.</p>
+        </a>
+
+        <a class="brand-card" href="https://www.tropicalsmoothiecafe.com/" target="_blank" rel="noopener" aria-label="Tropical Smoothie Cafe">
+          <div class="sticker"><img class="logo" src="assets/img/tsc-logo.webp" alt="Tropical Smoothie Cafe logo" loading="lazy"></div>
+          <div class="brand-name">Tropical Smoothie Cafe</div>
+          <div class="brand-region">USA</div>
+          <p class="brand-desc">Headless build: WordPress (WPEngine) + Next.js (Netlify) with Olo (menus/hours), Yext (locations), OneTrust, GA4/GSC/GTM, deep links. +30% web traffic and +20% orders after fixes.</p>
+        </a>
+
+        <a class="brand-card" href="https://bioadvanced.com/" target="_blank" rel="noopener" aria-label="Bio‑Advanced US">
+          <div class="sticker"><img class="logo" src="assets/img/bioadv-logo.webp" alt="Bio‑Advanced logo" loading="lazy"></div>
+          <div class="brand-name">Bio‑Advanced</div>
+          <div class="brand-region">USA</div>
+          <p class="brand-desc">Adobe Commerce Cloud 2.4.1 for lawn & garden; custom modules for articles, virtual‑product qty, and Bazaarvoice rating sync.</p>
+        </a>
+
+        <a class="brand-card" href="https://www.nahanco.com/" target="_blank" rel="noopener" aria-label="Nahanco US">
+          <div class="sticker"><img class="logo" src="assets/img/nahanco-logo.webp" alt="Nahanco logo" loading="lazy"></div>
+          <div class="brand-name">Nahanco</div>
+          <div class="brand-region">USA</div>
+          <p class="brand-desc">Adobe Commerce Cloud 2.4.1; custom cross‑sell, CSV order export & inventory sync, multi‑option ordering, and Buy Now module.</p>
+        </a>
+
+        <a class="brand-card" href="https://www.mariatash.com/" target="_blank" rel="noopener" aria-label="Maria Tash">
+          <div class="sticker"><img class="logo" src="assets/img/mariatash-logo.webp" alt="Maria Tash logo" loading="lazy"></div>
+          <div class="brand-name">Maria Tash</div>
+          <div class="brand-region">Global</div>
+          <p class="brand-desc">Adobe Commerce 2.4.0 for fine jewelry; product banner injections and advanced product filters between PLP rows.</p>
+        </a>
+
+        <a class="brand-card" href="https://www.pmjjewels.com/in" target="_blank" rel="noopener" aria-label="PMJ Jewels">
+          <div class="sticker"><img class="logo" src="assets/img/pmj-logo.webp" alt="PMJ Jewels logo" loading="lazy"></div>
+          <div class="brand-name">PMJ Jewels</div>
+          <div class="brand-region">India / ME / USA</div>
+          <p class="brand-desc">Magento 2.2.6 for jewelry; custom price calculation, shipping price estimator by PIN, RapNet diamond sync, newsletter & appointment modules.</p>
+        </a>
+
+        <a class="brand-card" href="https://www.allbackyardfun.com/" target="_blank" rel="noopener" aria-label="AllBackyardFun US">
+          <div class="sticker"><img class="logo" src="assets/img/abyf-logo.webp" alt="AllBackyardFun logo" loading="lazy"></div>
+          <div class="brand-name">AllBackyardFun</div>
+          <div class="brand-region">USA</div>
+          <p class="brand-desc">Migration from Magento 1.9.3 → Adobe Commerce Cloud 2.3.3; trade account workflow and Instagram feed widget modules.</p>
+        </a>
+
+        <a class="brand-card" href="https://www.nanan.ae/en/" target="_blank" rel="noopener" aria-label="Nanan ME">
+          <div class="sticker"><img class="logo" src="assets/img/nanan-logo.webp" alt="Nanan logo" loading="lazy"></div>
+          <div class="brand-name">Nanan</div>
+          <div class="brand-region">Middle East</div>
+          <p class="brand-desc">Adobe Commerce storefront for kids & baby wear in the Middle East; enhancements for performance, checkout UX and regionalization.</p>
+        </a>
+
+      </div></div>
+    </div>
+  </section>
+
+  <!-- STACK / CAPABILITIES -->
+  <section id="stack" aria-labelledby="stack-title">
+    <h2 id="stack-title" class="reveal">Stack & Capabilities</h2>
+    <div class="grid stack">
+      <div class="card reveal"><h3>Platforms</h3><p>Adobe Commerce / Magento 2, BigCommerce, WooCommerce, WordPress, Headless (Next.js).</p></div>
+      <div class="card reveal"><h3>Tech & Tools</h3><p>PHP, JavaScript, MySQL, Elasticsearch / Algolia / Live Search, Fastly, AWS, GA4/GTM/GSC, New Relic.</p></div>
+      <div class="card reveal"><h3>Commerce Features</h3><p>Multi‑store, B2B, subscriptions, payments (Stripe/Tabby/Tamara), tax (AvaTax), CRM/ERP/OMS.</p></div>
+      <div class="card reveal"><h3>SEO & GEO</h3><p>Technical SEO, schema, CWV, sitemaps, global targeting (US, EU, UAE, Middle East, SEA, India, ANZ).</p></div>
+    </div>
+  </section>
+
+  <!-- AWARDS with IMAGES -->
+  <section id="awards" aria-labelledby="awards-title">
+    <h2 id="awards-title" class="reveal">Awards & Recognition</h2>
+    <div class="awards">
+      <article class="award reveal">
+        <img src="assets/img/award-flagbearer.webp" alt="Flagbearer award photo" loading="lazy">
+        <div>
+          <h3>🏅 Flagbearer</h3>
+          <p>Recognized for representing and driving e‑commerce excellence globally.</p>
+        </div>
+      </article>
+      <article class="award reveal">
+        <img src="assets/img/award-certificate.webp" alt="Certificate of achievement image" loading="lazy">
+        <div>
+          <h3>📜 Certificate of Achievement</h3>
+          <p>Adobe Commerce / Magento delivery milestones and certifications.</p>
+        </div>
+      </article>
+      <article class="award reveal">
+        <img src="assets/img/award-appreciation.webp" alt="Appreciation award image" loading="lazy">
+        <div>
+          <h3>👏 Appreciation</h3>
+          <p>Client and team appreciations for impactful project delivery and leadership.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTACT CTA -->
+  <section id="contact" aria-labelledby="contact-title">
+    <h2 id="contact-title" class="reveal">Let’s build your growth story</h2>
+    <p class="reveal">Founders, product leaders, and recruiters: book a call or drop your details. I’ll reply within one business day.</p>
+    <div class="cta">
+      <div class="card reveal">
+        <h3>Book a Calendar Call</h3>
+        <p>Pick a slot that works for you. We’ll align on scope, KPIs, timeline, and budget.</p>
+        <button class="btn" id="btn-book-2" aria-haspopup="dialog" aria-controls="modal-cal">Open Calendly</button>
+      </div>
+      <div class="card reveal">
+        <h3>Share Your Requirements</h3>
+        <p>Send a quick brief (industry, stack, goals). I’ll respond with next steps.</p>
+        <button class="btn ghost" id="btn-brief-2" aria-haspopup="dialog" aria-controls="modal-form">Open Contact Form</button>
+      </div>
+    </div>
+    <p class="reveal">Email: <a href="mailto:mohithnanjundamurthy05@gmail.com">mohithnanjundamurthy05@gmail.com</a> &nbsp;|&nbsp; <a href="https://www.linkedin.com/in/mohith-ecommerce/" target="_blank" rel="noopener">LinkedIn</a> &nbsp;|&nbsp; <a href="https://github.com/mohith-ecommerce" target="_blank" rel="noopener">GitHub</a></p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <small>© <span id="year"></span> Mohith N — Adobe Commerce (Magento) Consultant • <a href="#home">Back to top</a></small>
+  </div>
+</footer>
+
+<!-- Calendly Modal -->
+<dialog id="modal-cal" aria-label="Book a meeting">
+  <div class="modal-head">
+    <strong>Book a 30‑minute call</strong>
+    <button class="x" data-close>✕</button>
+  </div>
+  <div class="modal-body">
+    <iframe title="Calendly scheduling" src="https://calendly.com/mohithnanjundamurthy05/30min" width="100%" height="640" style="border:0" loading="lazy"></iframe>
+  </div>
+</dialog>
+
+<!-- Google Form Modal -->
+<dialog id="modal-form" aria-label="Share your requirements">
+  <div class="modal-head">
+    <strong>Project Brief</strong>
+    <button class="x" data-close>✕</button>
+  </div>
+  <div class="modal-body">
+    <iframe title="Contact form" src="https://forms.gle/apFpYWTvEmeqqkyJ6" width="100%" height="640" style="border:0" loading="lazy"></iframe>
+  </div>
+</dialog>
+
+<script src="assets/app.js" defer></script>
+
+<!-- JSON‑LD Schema -->
+<script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Mohith N",
-    "jobTitle": "E-commerce Specialist (Adobe Commerce/M2, Woo, BigCommerce, WordPress)",
-    "sameAs": ["https://www.linkedin.com/in/mohith-ecommerce/", "https://github.com/mohith227", "https://magento.stackexchange.com/users/77931/mohith"]
+    "jobTitle": "Adobe Commerce (Magento) Lead Consultant",
+    "description": "Certified Adobe Commerce developer and e‑commerce architect delivering high‑performance storefronts, headless builds, and growth programs across the USA, Europe, UAE, Middle East & APAC.",
+    "email": "mailto:mohithnanjundamurthy05@gmail.com",
+    "url": "https://mohith-ecommerce.github.io/",
+    "sameAs": [
+      "https://www.linkedin.com/in/mohith-ecommerce/",
+      "https://github.com/mohith-ecommerce"
+    ],
+    "knowsAbout": ["Adobe Commerce","Magento 2","Headless Commerce","Algolia","Fastly","GA4","GTM","GSC","AvaTax","Stripe","WooCommerce","BigCommerce"],
+    "areaServed": ["US","Europe","UAE","Middle East","South East Asia","India","Australia","New Zealand"],
+    "alumniOf": {"@type":"CollegeOrUniversity","name":"BNM Institute of Technology"},
+    "address": {"@type":"PostalAddress","addressCountry":"IN"},
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "consultation",
+      "email": "mohithnanjundamurthy05@gmail.com",
+      "areaServed": ["US","Europe","UAE","Middle East","South East Asia","India","Australia","New Zealand"]
+    }
   }
-  </script>
-</head>
-<body>
-  <a class="skip" href="#main">Skip to content</a>
-  <header class="wf-header reveal from-top">
-    <div class="container">
-      <div class="brand">
-        <div class="avatar" aria-hidden="true"></div>
-        <div class="id">
-          <strong>Mohith N</strong>
-          <span>E-commerce Specialist (Adobe Commerce/M2, Woo, BigCommerce, WordPress)</span>
-        </div>
-      </div>
-      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle menu">
-        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-      </button>
-      <nav class="wf-nav" id="site-nav">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#work">Work</a>
-        <a href="#cases">Case Studies</a>
-        <a href="#results">Results</a>
-        <a href="#blog">Blog</a>
-        <a href="#faq">FAQs</a>
-        <a href="#contact">Contact</a>
-        <a class="cv" href="mohith-n-ecommerce-specialist.pdf" download>Download CV</a>
-        <a href="https://www.linkedin.com/in/mohith-ecommerce/" target="_blank" rel="noopener" aria-label="LinkedIn profile">LinkedIn</a>
-        <a href="https://github.com/mohith227" target="_blank" rel="noopener" aria-label="GitHub profile">GitHub</a>
-        <a href="https://magento.stackexchange.com/users/77931/mohith" target="_blank" rel="noopener" aria-label="Magento Stack Exchange profile">Magento Stack Exchange</a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="main">
-    <section id="hero" class="section hero">
-      <div class="container grid-2">
-        <div class="reveal from-left">
-          <h1 class="wire-h1">E-commerce specialist across Adobe Commerce (Magento 2), WooCommerce, BigCommerce & WordPress.</h1>
-          <p class="wire-sub">15+ years building high-performance commerce sites that rank, load fast, and convert across India, USA, Europe, UAE, Middle East, SEA & ANZ.</p>
-          <div class="cta-row">
-            <button class="btn primary" onclick="Calendly.initPopupWidget({ url: 'https://calendly.com/mohithnanjundamurthy05/30min' }); return false;">Book a 30-min intro</button>
-            <a class="btn ghost" href="#contact">Send project details</a>
-            <a class="btn" href="mailto:mohithnanjundamurthy05@gmail.com">Email</a>
-          </div>
-        </div>
-        <div class="reveal from-right">
-          <div class="wire-image">HERO VISUAL</div>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section">
-      <div class="container reveal from-bottom">
-        <h2 class="wire-h2">About — A quick story</h2>
-        <div class="wire-box">
-          <p>I’m usually called in when a store is slow, fragile, or hard to change. My job is to make it fast, stable, and measurable—then leave the team with a setup they can maintain. Focus areas: Core Web Vitals, technical SEO/GEO, Algolia/Live Search, Fastly/CDN, New Relic, GA4/GTM/GSC.</p>
-        </div>
-        <ul class="pill-list">
-          <li>Performance</li><li>Platform</li><li>Search</li><li>Data</li><li>SEO/GEO</li><li>Reliability</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="services" class="section muted">
-      <div class="container">
-        <h2 class="wire-h2 reveal from-left">Services</h2>
-        <div class="cards">
-          <div class="card reveal from-right"><div class="card-h">Engineering & Architecture</div><div class="card-b">Adobe Commerce 2.4.x (Cloud), custom modules/APIs, migrations (M1→M2/Cloud).</div></div>
-          <div class="card reveal from-left"><div class="card-h">Performance & CWV</div><div class="card-b">Fastly strategy, TTFB budgets, images, CLS-safe templates.</div></div>
-          <div class="card reveal from-right"><div class="card-h">Search & Discovery</div><div class="card-b">Algolia/Live Search config, facets, rules, zero-result handling.</div></div>
-          <div class="card reveal from-left"><div class="card-h">SEO & GEO</div><div class="card-b">Crawl/index hygiene, schema (Product/FAQ/Breadcrumb), assistant-readable facts.</div></div>
-          <div class="card reveal from-right"><div class="card-h">Integrations & Data</div><div class="card-b">Stripe, TaxJar/AvaTax, SAP/Zoho, Bazaarvoice; importers & feeds.</div></div>
-          <div class="card reveal from-left"><div class="card-h">Analytics & CRO</div><div class="card-b">GA4 + Plausible, funnels/goals, event taxonomy, KPI dashboards.</div></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="work" class="section">
-      <div class="container">
-        <h2 class="wire-h2 reveal from-left">Selected Work</h2>
-        <div class="grid-3">
-          <div class="tile reveal from-left"><div class="tile-img">Screenshot</div><div class="tile-h">Project 1</div><div class="tile-b">Short outcome line + tech tags.</div></div><div class="tile reveal from-right"><div class="tile-img">Screenshot</div><div class="tile-h">Project 2</div><div class="tile-b">Short outcome line + tech tags.</div></div><div class="tile reveal from-left"><div class="tile-img">Screenshot</div><div class="tile-h">Project 3</div><div class="tile-b">Short outcome line + tech tags.</div></div><div class="tile reveal from-right"><div class="tile-img">Screenshot</div><div class="tile-h">Project 4</div><div class="tile-b">Short outcome line + tech tags.</div></div><div class="tile reveal from-left"><div class="tile-img">Screenshot</div><div class="tile-h">Project 5</div><div class="tile-b">Short outcome line + tech tags.</div></div><div class="tile reveal from-right"><div class="tile-img">Screenshot</div><div class="tile-h">Project 6</div><div class="tile-b">Short outcome line + tech tags.</div></div><div class="tile reveal from-left"><div class="tile-img">Screenshot</div><div class="tile-h">Project 7</div><div class="tile-b">Short outcome line + tech tags.</div></div><div class="tile reveal from-right"><div class="tile-img">Screenshot</div><div class="tile-h">Project 8</div><div class="tile-b">Short outcome line + tech tags.</div></div><div class="tile reveal from-left"><div class="tile-img">Screenshot</div><div class="tile-h">Project 9</div><div class="tile-b">Short outcome line + tech tags.</div></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="cases" class="section muted">
-      <div class="container">
-        <h2 class="wire-h2 reveal from-right">Case Studies</h2>
-        <div class="case-cards">
-          <article class="case reveal from-bottom">
-            <div class="case-h">BinSina — Reliability under peak</div>
-            <ul><li>Problem → busy pharmacy storefront under promotion peaks</li><li>Approach → CDN/edge refinements, cache keys/invalidations, Algolia rules</li><li>Result → responsive feel under load, easier evolution</li></ul>
-          </article>
-          <article class="case reveal from-bottom">
-            <div class="case-h">Tropical Smoothie Cafe — Headless clarity</div>
-            <ul><li>Problem → unclear performance signals in headless stack</li><li>Approach → SSR with smart caching, image budgets, GA4 event model</li><li>Result → safer releases, measurable impact</li></ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="results" class="section">
-      <div class="container reveal from-left">
-        <h2 class="wire-h2">Results & Proof</h2>
-        <ul class="ticks">
-          <li>Stable Core Web Vitals across key templates</li>
-          <li>Better product discovery with tuned Algolia/Live Search</li>
-          <li>Analytics-driven decisions with GA4 + Plausible</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="blog" class="section muted">
-      <div class="container">
-        <h2 class="wire-h2 reveal from-right">Blog / Notes</h2>
-        <div class="cards">
-          <div class="card reveal from-left"><div class="card-h">GEO for commerce</div><div class="card-b">How assistants “read” your store.</div></div>
-          <div class="card reveal from-right"><div class="card-h">CWV quick wins</div><div class="card-b">Fast fixes that stick.</div></div>
-          <div class="card reveal from-left"><div class="card-h">Pipeline hygiene</div><div class="card-b">Adobe Commerce deployments that don’t hurt.</div></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="faq" class="section">
-      <div class="container reveal from-left">
-        <h2 class="wire-h2">FAQs</h2>
-        <details><summary>What kinds of commerce projects do you thrive on?</summary><p>Adobe Commerce (Magento 2) builds/migrations with a focus on performance (Core Web Vitals), search/discovery, and integrations like Algolia/Live Search, Fastly/CDN, GA4/GTM/GSC, New Relic.</p></details>
-        <details><summary>What’s your approach to Core Web Vitals?</summary><p>Baseline field + lab, TTFB/LCP/INP/CLS budgets, render path & image strategy (AVIF/WebP), Fastly caching with safe invalidation.</p></details>
-        <details><summary>Do you handle search and product discovery?</summary><p>Yes—Algolia/Live Search (indices, synonyms, rules), facets, zero-result fallbacks, and analytics to see what people actually find.</p></details>
-        <details><summary>Do you build custom Magento modules?</summary><p>Yes—pricing calculators, importers, review sync, cross-sell logic, and plugins for headless setups.</p></details>
-        <details><summary>Can you help with migrations (M1 → M2/Cloud)?</summary><p>Yes—dress rehearsals, data validation, safe cutovers to Adobe Commerce Cloud.</p></details>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact">
-      <div class="container">
-        <h2 class="wire-h2 reveal from-right">Contact</h2>
-        <div class="cta-row reveal from-left">
-          <button class="btn primary" onclick="Calendly.initPopupWidget({ url: 'https://calendly.com/mohithnanjundamurthy05/30min' }); return false;">Book a 30-min intro</button>
-          <a class="btn" href="mailto:mohithnanjundamurthy05@gmail.com">Email me</a>
-          <a class="btn ghost" href="#form">Project details (form)</a>
-        </div>
-        <div id="form" class="form-wrap reveal from-bottom">
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScqljoo6IL0rXUYyj4mf8NxhI67hqXkmdK-uP6JE75GcGwsLg/viewform?embedded=true" width="100%" height="1200" frameborder="0" title="Project brief (Google Form)"></iframe>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="wf-footer">
-    <div class="container">
-      <small>© Mohith N · <a href="https://www.linkedin.com/in/mohith-ecommerce/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/mohith227" target="_blank" rel="noopener">GitHub</a> · <a href="https://magento.stackexchange.com/users/77931/mohith" target="_blank" rel="noopener">Magento Stack Exchange</a> · <a href="mohith-n-ecommerce-specialist.pdf" download>Download CV</a></small>
-    </div>
-  </footer>
-
-  <button class="sticky-cta" onclick="Calendly.initPopupWidget({ url: 'https://calendly.com/mohithnanjundamurthy05/30min' }); return false;">Book a call</button>
-
-  <script src="script.js" defer></script>
+</script>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Mohith N — E‑commerce Consultant",
+    "url": "https://mohith-ecommerce.github.io/",
+    "potentialAction": {
+      "@type": "ContactAction",
+      "target": ["https://calendly.com/mohithnanjundamurthy05/30min","https://forms.gle/apFpYWTvEmeqqkyJ6"],
+      "result": {"@type":"Thing","name":"Booked Consultation"}
+    }
+  }
+</script>
 </body>
 </html>
